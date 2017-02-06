@@ -1,0 +1,20 @@
+
+<h1>index Articles!</h1>
+<p>Articles#index. Find me in app/views/articles/index.html.erb</p>
+<h3>Listing Articles </h3>
+<table>
+<tr>
+<th>Title </th>
+<th>Text Content </th>
+</tr>
+<% @articles.each do |one| %>
+	<tr>
+	<td><strong> <%= one.title %></strong></td>
+	<td> <%= one.textcontent %></td>
+	<td> <%= link_to 'Show it', article_path(one) %> </td>
+	</tr>
+	<%end %>
+</table>
+
+
+

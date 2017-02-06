@@ -1,0 +1,21 @@
+
+<h1>Hello Articles!</h1>
+<p>Articles#new. Find me in app/views/articles/new.html.erb</p>
+
+<%= form_for :article, url: articles_path do |a| %>
+<p>
+	<%= a.label :title %><br>
+	<%= a.text_field :title %>
+</p>
+
+<p> 
+<%= a.label :textinput %> <br>
+<%= a.text_area :textcontent %>
+</p>
+
+<p>
+	<%= a.submit %>
+</p>
+
+<% end %>
+
