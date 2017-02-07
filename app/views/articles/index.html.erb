@@ -2,6 +2,9 @@
 <h1>index Articles!</h1>
 <p>Articles#index. Find me in app/views/articles/index.html.erb</p>
 <h3>Listing Articles </h3>
+<%= link_to 'New Article Link', new_article_path %>
+
+
 <table>
 <tr>
 <th>Title </th>
@@ -15,6 +18,8 @@
 	</tr>
 	<%end %>
 </table>
+<%= link_to 'Back to welcome2', :controller => :welcome , :action => :index %>
+
 
 
 
