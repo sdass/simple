@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
-
+#require 'byebug'
 def index
+	byebug #for debugging
 	puts "<<<<<____in index_______>>>>>>>>>>"
 	@articles = Article.all
 end

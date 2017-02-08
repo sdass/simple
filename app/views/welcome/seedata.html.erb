@@ -1,0 +1,23 @@
+
+<h1>See  Data!</h1>
+<p>Welcome#seedata. Find me in app/views/welcome/seedata.html.erb</p>
+<%= link_to 'Article Link', controller:'articles' %>
+<br>
+<%= link_to 'Article path1', :controller => :articles %>
+<br>
+<%= link_to 'Article path2', :controller => :articles , :action => :index %>
+
+<!--
+collection @mytasks
+attributes :id, :name, :priority, :type
+-->
+<br>
+<!-- it will go inside rabl file
+object @user
+attributes :name, :age, :year
+-->
+
+
+<div id="user" 
+ data-user="<%= render(template: "welcome/seedata.rabl") %>" 
+ >nosee</div>

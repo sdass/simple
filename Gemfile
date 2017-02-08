@@ -29,6 +29,12 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+#sdass added below
+gem 'rabl', '0.11.5'
+gem 'responders'
+gem 'byebug' #despite complain
+
+#sdass added ends
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

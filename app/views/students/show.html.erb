@@ -1,0 +1,19 @@
+<h1>Students#show</h1>
+<p>Find me in app/views/students/show.html.erb</p>
+
+<p> 
+<strong>name: <%= @student.name %>  </strong>
+</p>
+
+<p> 
+	age:
+	<%= @student.age %>
+</p>
+
+<!--
+
+<div id="student" 
+ data-student="<%= render(template: "students/show.rabl") %>" 
+ >none</div>
+ -->
+<%= render template: 'students/show.rabl' %>
