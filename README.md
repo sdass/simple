@@ -14,6 +14,7 @@ rails g[enerate] controller Users show
 rails g[enerate] model Users 
 
 rails routes
+go to web appln directory ....\simple
 rails s[erver]
 
 
